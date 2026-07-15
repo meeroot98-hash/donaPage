@@ -95,17 +95,9 @@ body{
     border-radius: 5px;
     
 }
-
-
-
-
-
-
-
     
 main{
-
-        padding-top: 50px;
+    
         height: 100dvh;
         width: 100dvw;
         display: flex;
@@ -146,7 +138,12 @@ main{
     font-weight: bold;
     padding: 18px 60px;
     border-radius: 8px;
-    
+    transition: 0.4s ease;
+}
+#botonDonar.activo{
+
+     background-color: aqua;
+     color: blue;
 }
 
 
