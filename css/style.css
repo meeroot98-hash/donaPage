@@ -15,6 +15,7 @@ body{
     padding:0px;
     margin: 0px;
     height: 100dvh;
+    width: 100dvw;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -27,8 +28,8 @@ body{
         align-items: center;
         text-align: center;
         gap: 120px;
-        height: 37px;
-        width: 100%;
+        height: 50px;
+        width: 100vw;
         padding: 0px;
         margin: 0px;
         background: #1F618D;
@@ -47,63 +48,11 @@ body{
         color: white;
         border-style: none;
     }
-
-
-
-
-
-
-    
-main{
-
-        padding-top: 60px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 10px;
-        font-size: 15px;
-        height: auto;
-        
-        }
-#texto1{
-
-
-    background-color: white;
-
-
-
-
-}
-#carrusel{
-
-    width: 160px;
-    height: 180px;
-    background-color: blue;
-    border-radius: 10px;
-}
-#texto2{
-
-    background-color: yellow;
-    font-size: 15px;
-}
-
-#botonDonar{
-    margin-top: 12px;
-    border-style: none;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 13px 60px;
-    border-radius: 8px;
-    cursor: pointer;
-    
-}
-
-#cajaMenu {
+    #cajaMenu {
   transform: translateX(100%); /* lo empuja fuera del viewport */
   transition: transform 0.5s ease, opacity 0.5s ease;
   position: fixed; /* para que se desplace sobre el contenido */       
-  top:37px;/* debajo del header */
+  top:50px;/* debajo del header */
   right: 0;        /* pegado al borde derecho */
 
 }
@@ -146,3 +95,58 @@ main{
     border-radius: 5px;
     
 }
+
+
+
+
+
+
+
+    
+main{
+
+        padding-top: 50px;
+        height: 100dvh;
+        width: 100dvw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        
+        
+        
+        }
+#texto1{
+
+    font-size: 24px;
+    background-color: white;
+
+
+
+
+}
+#carrusel{
+
+    width: 200px;
+    height: 250px;
+    background-color: blue;
+    border-radius: 10px;
+}
+#texto2{
+
+    background-color: yellow;
+    font-size: 20px;
+}
+
+#botonDonar{
+    margin-top: 12px;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 18px 60px;
+    border-radius: 8px;
+    
+}
+
+
