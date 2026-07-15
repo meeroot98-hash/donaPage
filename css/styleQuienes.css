@@ -14,6 +14,7 @@ body{
     background-color: grey;
     padding:0px;
     margin: 0px;
+    height: 100dvh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -28,34 +29,72 @@ body{
         gap: 120px;
         height: 37px;
         width: 100%;
+        padding: 0px;
+        margin: 0px;
         background: #1F618D;
+}
 
-        
-    }
-
-    .barNav img{
-        height: 25px;
-        width: 25px;
-    }
-    .barNav button{
-
-        width: 26px;
-        height: 26px;
-        border-style: none;
-        background: #1F618D;
-    }
-
-    
-    #logo{
+     #logo{
         color: white;
         font-weight: bold;
     }
+    #botonMenu{
+        display: inline-block;
+        padding: 4px 5px;
+        background-color: #1F618D;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        border-style: none;
+    }
+
+        #cajaMenu {
+  transform: translateX(100%); /* lo empuja fuera del viewport */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  position: fixed; /* para que se desplace sobre el contenido */       
+  top:37px;/* debajo del header */
+  right: 0;        /* pegado al borde derecho */
+
+}
+#cajaMenu.activo {
+  transform: translateX(0); /* vuelve a su posición normal */
+  
+}
+#cajaMenu{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cajaLista{
 
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#lista{
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: purple;
+    width: 150px;
+    height: 250px;
 
+}
+.conjunto{
 
-
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+    padding: 10px 5px;
+    border-radius: 5px;
+    
+}
 
     main{
         
@@ -117,3 +156,4 @@ body{
 
         background-color: aliceblue;
     }
+

@@ -1,13 +1,11 @@
 const botonMenu = document.getElementById("botonMenu");
 const cajaMenu=document.createElement("div");
-const botonDonar = document.getElementById("botonDonar")
-
-
+ 
     cajaMenu.id = "cajaMenu";
     cajaMenu.style.width= "100%";
     cajaMenu.style.height= "100%";
     cajaMenu.style.backgroundColor="rgb(14, 26, 12)"
-    botonDonar.style.transition = "background-color 0.3s ease";
+   
 
 
     ////efefcto en boto Menu/////////////////
@@ -45,62 +43,29 @@ const botonDonar = document.getElementById("botonDonar")
 
 
     const paises = document.createElement("a");
-    paises.href="#";
+    paises.href="paises.html";
     paises.innerText="Paises";
     menuLista.appendChild(paises);
 
     const quienes = document.createElement("a");
-    quienes.href="#";
+    quienes.href="quienSomos.html";
     quienes.innerText="Quienes Somos";
     menuLista.appendChild(quienes);
 
 
     const agradecimiento = document.createElement("a");
-    agradecimiento.href="#";
+    agradecimiento.href="gracias.html";
     agradecimiento.innerText="Agredecimiento";
     menuLista.appendChild(agradecimiento);
 
     
-
-
-
     inicio.classList.add("conjunto")
     paises.classList.add("conjunto");
     quienes.classList.add("conjunto");
-    agradecimiento.classList.add("conjunto");    
-    
-    menuLista.appendChild(paises);
-    menuLista.appendChild(quienes);
-    menuLista.appendChild(agradecimiento);
-    
+    agradecimiento.classList.add("conjunto");
 
-    
-    
-
-
-
-
-
-
-   
-
-
-botonMenu.addEventListener("click", () => {
+  botonMenu.addEventListener("click", () => {
   cajaMenu.classList.toggle("activo");
 }); 
 
 
-
-botonDonar.style.backgroundColor="#000fff"
-botonDonar.style.color="#ffffff"
-botonDonar.style.transition = "background-color 0.3s ease";
-
-
-botonDonar.addEventListener("touchstart", () =>{
-    
-    botonDonar.style.backgroundColor="#ff0123"
-})
-botonDonar.addEventListener("touchend", () =>{
-
-    botonDonar.style.backgroundColor = "#000fff"
-})
