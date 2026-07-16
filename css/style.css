@@ -48,10 +48,12 @@ body{
         color: white;
         border-style: none;
     }
+
+    
     #cajaMenu {
   transform: translateX(100%); /* lo empuja fuera del viewport */
   transition: transform 0.5s ease, opacity 0.5s ease;
-  position: fixed; /* para que se desplace sobre el contenido */       
+   /* para que se desplace sobre el contenido */       
   top:50px;/* debajo del header */
   right: 0;        /* pegado al borde derecho */
 
@@ -60,40 +62,39 @@ body{
   transform: translateX(0); /* vuelve a su posición normal */
   
 }
-#cajaMenu{
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#cajaMenu {
+  margin: 0;
+  padding: 0;
+  width: 100dvw;
+  height: calc(100dvh - 50px);
+  display: flex;
+  position: fixed;
+  justify-content: center; /* centra horizontal */
+  align-items: center;     /* centra vertical */
 }
-#cajaLista{
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#cajaLista {
+  width: 80%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  background-color: #ff00f0; /* opcional para ver el bloque */
 }
 
-#lista{
-    
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    background-color: purple;
-    width: 150px;
-    height: 250px;
-
-}
 .conjunto{
-
     color: rgb(0, 0, 0);
     background-color: yellow;
-    padding: 10px 5px;
+    width: 200px;
+    height: 60px;
     border-radius: 5px;
-    
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
     
 main{

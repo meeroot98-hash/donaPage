@@ -1,71 +1,52 @@
 const botonMenu = document.getElementById("botonMenu");
-const cajaMenu=document.createElement("div");
- 
-    cajaMenu.id = "cajaMenu";
-    cajaMenu.style.width= "100%";
-    cajaMenu.style.height= "100%";
-    cajaMenu.style.backgroundColor="rgb(14, 26, 12)"
-   
+const cajaMenu = document.createElement("div");
 
+cajaMenu.id = "cajaMenu";
+cajaMenu.style.backgroundColor = "rgb(14, 26, 12)";
 
-    ////efefcto en boto Menu/////////////////
-    botonMenu.addEventListener("touchstart", ()=>{
+////efefcto en boto Menu/////////////////
+botonMenu.addEventListener("touchstart", () => {
+  botonMenu.style.backgroundColor = "#ffffff";
+  botonMenu.style.color = "#000000";
+});
+botonMenu.addEventListener("touchend", () => {
+  botonMenu.style.backgroundColor = "#1F618D";
+  botonMenu.style.color = "#ffffff";
+});
 
-                botonMenu.style.backgroundColor="#ffffff"
-                botonMenu.style.color="#000000"
-    })
-    botonMenu.addEventListener("touchend",()=>{
-                botonMenu.style.backgroundColor="#1F618D";
-                botonMenu.style.color="#ffffff"
+document.body.appendChild(cajaMenu); /////////////////////creando menu despleglable
 
-    })
-    
+const cajaLista = document.createElement("div");
+cajaLista.id = "cajaLista";
+cajaMenu.appendChild(cajaLista); //////////////////////////// creando Lista adentro
 
+const inicio = document.createElement("a");
+inicio.href = "index.html";
+inicio.innerText = "Inicio";
+cajaLista.appendChild(inicio);
 
-    document.body.appendChild(cajaMenu);/////////////////////creando menu despleglable
+const paises = document.createElement("a");
+paises.href = "paises.html";
+paises.innerText = "Paises";
+cajaLista.appendChild(paises);
 
-    const cajaLista= document.createElement("div");
-    cajaLista.id = "cajaLista";
-    cajaLista.style.width="300px";
-    cajaLista.style.height="450px";
-    cajaLista.style.backgroundColor="#ff00f0";
-    cajaMenu.appendChild(cajaLista);//////////////////////////// creando Lista adentro
-    
-    const menuLista= document.createElement("li");
-    cajaLista.appendChild(menuLista);
-    menuLista.id="lista";
+const quienes = document.createElement("a");
+quienes.href = "quienSomos.html";
+quienes.innerText = "Quienes Somos";
+cajaLista.appendChild(quienes);
 
+const agradecimiento = document.createElement("a");
+agradecimiento.href = "gracias.html";
+agradecimiento.innerText = "Agredecimiento";
+cajaLista.appendChild(agradecimiento);
 
-    const inicio = document.createElement("a");
-    inicio.href="index.html";
-    inicio.innerText="Inicio"
-    menuLista.appendChild(inicio);
+inicio.classList.add("conjunto");
+paises.classList.add("conjunto");
+quienes.classList.add("conjunto");
+agradecimiento.classList.add("conjunto");
 
-
-    const paises = document.createElement("a");
-    paises.href="paises.html";
-    paises.innerText="Paises";
-    menuLista.appendChild(paises);
-
-    const quienes = document.createElement("a");
-    quienes.href="quienSomos.html";
-    quienes.innerText="Quienes Somos";
-    menuLista.appendChild(quienes);
-
-
-    const agradecimiento = document.createElement("a");
-    agradecimiento.href="gracias.html";
-    agradecimiento.innerText="Agredecimiento";
-    menuLista.appendChild(agradecimiento);
-
-    
-    inicio.classList.add("conjunto")
-    paises.classList.add("conjunto");
-    quienes.classList.add("conjunto");
-    agradecimiento.classList.add("conjunto");
-
-  botonMenu.addEventListener("click", () => {
+botonMenu.addEventListener("click", () => {
   cajaMenu.classList.toggle("activo");
-}); 
+});
 
 
