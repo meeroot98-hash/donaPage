@@ -98,19 +98,27 @@ body{
 }
     
 main{
-    
-        height: 100dvh;
-        width: 100dvw;
+        margin-top: 50px; 
+         height: calc(100dvh - 50px);
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        gap: 10px;
-        
-        
+        background-color: aqua;  
         
         }
+        #informacion{
+            background-color: #4b007e;
+            height: 85%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
 #texto1{
 
     font-size: 24px;
