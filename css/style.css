@@ -11,7 +11,7 @@
    
 }
 body{
-    background-color: grey;
+    background-color: rgb(0, 0, 0);
     padding:0px;
     margin: 0px;
     height: 100dvh;
@@ -38,6 +38,7 @@ body{
      #logo{
         color: white;
         font-weight: bold;
+        font-size: 20px;
     }
     #botonMenu{
         display: inline-block;
@@ -108,20 +109,24 @@ main{
         background-color: aqua;  
         
         }
+
         #informacion{
             background-color: #4b007e;
-            height: 85%;
-            width: 80%;
+            height: auto;
+            width: auto;
             display: flex;
+            gap: 9px;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             text-align: center;
-        }
+            
+            }
 
 #texto1{
 
     font-size: 24px;
+
     background-color: white;
 
 
@@ -130,20 +135,20 @@ main{
 }
 #carrusel{
 
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 320px;
     background-color: blue;
     border-radius: 10px;
 }
 #texto2{
 
     background-color: yellow;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #botonDonar{
-    margin-top: 12px;
-    font-size: 26px;
+    
+    font-size: 28px;
     font-weight: bold;
     padding: 18px 60px;
     border-radius: 8px;
