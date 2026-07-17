@@ -105,19 +105,37 @@ body{
 
     /*section de agredecimiento  .-.*/
 
-    .principal{
-        margin-top: 74px;
+    main{
+        margin-top: 50px;
+        height: calc(100dvh - 50px);
+        width:  100dvw;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+    }
+    #informacion{
+        background-color: bisque;
+        height: 95%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
         text-align: center;
     }
 
+    #texto1{
+
+        font-size: 25px;
+    }
+
+
+
     #carrusel{
 
-        width: 200px;
-        height: 250px;
+        width: 250px;
+        height: 318px;
         background:rgb(211, 36, 36);
         border-radius: 10px;
     }
@@ -126,86 +144,26 @@ body{
 
         display: flex;
         flex-direction: column;
-        gap: 20px;
-    }
-    #botones a{
-        color: white;
-        font-size: 20px;
-        padding: 0px;
+        gap: 10px;
+        background-color: #454d36;
+       
     }
 
     #verde{
         text-align: center;
-        height: 50px;
-        width: 180px;
+        padding: 15px 100px;
         border-radius: 6px;
-        background: #2ECC71;
-        font-size: 15px;
+        background: #a8ff06;
+        font-size: 25px;
         font-weight: bold;
-        box-shadow: 0px 5px 3px 0px rgb(68, 110, 68);
-    }
+   
+    }   
         #azul{
         text-align: center;
-        height: 50px;
-        width: 180px;
+        padding: 15px 100px ;
         border-radius: 6px;
-        background:#1F618D;
-        font-size: 15px;
+        background:#4fa2da;
+        font-size: 25px;
         font-weight: bold;
-        box-shadow: 0px 5px 3px 0px rgb(68, 110, 68);
+        
     }
-
-    #cajaMenu {
-  transform: translateX(100%); /* lo empuja fuera del viewport */
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  position: fixed; /* para que se desplace sobre el contenido */       
-  top:37px;/* debajo del header */
-  right: 0;        /* pegado al borde derecho */
-
-}
-#cajaMenu.activo {
-  transform: translateX(0); /* vuelve a su posición normal */
-  
-}
-#cajaMenu{
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#cajaLista{
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#lista{
-    
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    background-color: purple;
-    width: 150px;
-    height: 250px;
-
-}
-.conjunto{
-
-    color: rgb(0, 0, 0);
-    background-color: yellow;
-    padding: 10px 5px;
-    border-radius: 5px;
-    
-}
-
-
-    
-
-
-    
-
