@@ -11,11 +11,16 @@
    
 }
 body{
-    
+    background-color: rgb(0, 0, 0);
     padding:0px;
     margin: 0px;
+    height: 100dvh;
+    width: 100dvw;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
+
 .barNav{ 
         position: fixed;
         display:flex;
@@ -23,8 +28,8 @@ body{
         align-items: center;
         text-align: center;
         gap: 120px;
-        height: 37px;
-        width: 100%;
+        height: 50px;
+        width: 100vw;
         padding: 0px;
         margin: 0px;
         background: #1F618D;
@@ -33,6 +38,7 @@ body{
      #logo{
         color: white;
         font-weight: bold;
+        font-size: 20px;
     }
     #botonMenu{
         display: inline-block;
@@ -43,12 +49,13 @@ body{
         color: white;
         border-style: none;
     }
-    /*section de la barra de menu ._. */
+
+    
     #cajaMenu {
   transform: translateX(100%); /* lo empuja fuera del viewport */
   transition: transform 0.5s ease, opacity 0.5s ease;
-  position: fixed; /* para que se desplace sobre el contenido */       
-  top:37px;/* debajo del header */
+   /* para que se desplace sobre el contenido */       
+  top:50px;/* debajo del header */
   right: 0;        /* pegado al borde derecho */
 
 }
@@ -56,79 +63,97 @@ body{
   transform: translateX(0); /* vuelve a su posición normal */
   
 }
-#cajaMenu{
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#cajaMenu {
+  margin: 0;
+  padding: 0;
+  width: 100dvw;
+  height: calc(100dvh - 50px);
+  display: flex;
+  position: fixed;
+  justify-content: center; /* centra horizontal */
+  align-items: center;     /* centra vertical */
 }
-#cajaLista{
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#cajaLista {
+  width: 80%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  background-color: #ff00f0; /* opcional para ver el bloque */
 }
 
-#lista{
-    
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    background-color: purple;
-    width: 150px;
-    height: 250px;
-
-}
 .conjunto{
-
     color: rgb(0, 0, 0);
     background-color: yellow;
-    padding: 10px 5px;
+    width: 200px;
+    height: 60px;
     border-radius: 5px;
-    
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 main{
-    padding-top: 37px;
-    height: 100dvh;
-    
-    text-align: center;
+    margin-top: 50px;
+    height: calc(100dvh - 50px);
+    width: 100%;
+    background-color: #ffbc41;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: yellow;
+    align-items: center;
+}
+#informacion{
+
+    background-color: aqua;
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    text-align: center;
+
 }
 #texto{
-    
-    padding-top: 20px;
+    font-size: 24px;
 
+}
+
+#menuPaises{
+    margin-top: 20px;
+    height: calc(70% - 20px);
+    background-color: rgb(104, 173, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+
+    
+
+
+
+}
+#menuPaises a{
+    text-align: center;
+    color: white;
+    background-color: yellow;
+    list-style: none;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 35px;
+    border-radius: 7px;
+    
+}
     
    
-}
-#menuPaises{
-height: 100%;
-background-color: red;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
+    
+   
 
-
-
-    }
-#menuPaises a{
-
-text-decoration: none;
-font-size: 20px;
-font-weight: bold;
-color:rgb(0, 0, 0);
-background: rgb(251, 255, 251);
-padding: 10px 5px;
-border-radius: 5px;
-
-    }
 
