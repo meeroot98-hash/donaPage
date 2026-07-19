@@ -33,6 +33,7 @@ body{
         padding: 0px;
         margin: 0px;
         background: #1F618D;
+        box-shadow: 0px 3px 4px rgb(185, 185, 185);
 }
 
      #logo{
@@ -113,9 +114,10 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: white;
     }
     #informacion{
-        background-color: bisque;
+        
         height: 95%;
         width: 100%;
         display: flex;
@@ -123,47 +125,59 @@ body{
         justify-content: space-evenly;
         align-items: center;
         text-align: center;
+        color: #1F618D;
     }
 
     #texto1{
 
         font-size: 25px;
+
+    }
+    #textoo{
+        color: grey;
     }
 
 
 
     #carrusel{
 
-        width: 250px;
-        height: 318px;
-        background:rgb(211, 36, 36);
-        border-radius: 10px;
+        width: 280px;
+        height: 250px;
+        background:#D9D9D9;
+        color: white;
+        border-radius: 30px;
     }
 
     #botones{
 
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        background-color: #454d36;
+        gap: 25px;
+        
+        
+        
        
     }
 
     #verde{
         text-align: center;
-        padding: 15px 100px;
-        border-radius: 6px;
-        background: #a8ff06;
+        padding: 18px 100px;
+        border-radius: 8px;
+        background:#2ECC71 ;
+        color: white;
         font-size: 25px;
         font-weight: bold;
+        box-shadow: 0px 8px 5px green;
    
     }   
         #azul{
         text-align: center;
-        padding: 15px 100px ;
-        border-radius: 6px;
-        background:#4fa2da;
+        padding: 18px 100px ;
+        border-radius: 8px;
+        background:#1F618D;
         font-size: 25px;
         font-weight: bold;
+        color: white;
+        box-shadow: 0px 8px 4px #062941;
         
     }
