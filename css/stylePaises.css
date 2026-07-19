@@ -33,6 +33,7 @@ body{
         padding: 0px;
         margin: 0px;
         background: #1F618D;
+        box-shadow: 0px 3px 4px rgb(185, 185, 185);
 }
 
      #logo{
@@ -102,7 +103,7 @@ main{
     margin-top: 50px;
     height: calc(100dvh - 50px);
     width: 100%;
-    background-color: #ffbc41;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,7 +111,7 @@ main{
 }
 #informacion{
 
-    background-color: aqua;
+    
     height: 95%;
     width: 100%;
     display: flex;
@@ -123,12 +124,12 @@ main{
 #texto{
     font-size: 24px;
 
+
 }
 
 #menuPaises{
     margin-top: 20px;
     height: calc(70% - 20px);
-    background-color: rgb(104, 173, 233);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -143,7 +144,8 @@ main{
 #menuPaises a{
     text-align: center;
     color: white;
-    background-color: yellow;
+    background-color: #2ECC71;
+    box-shadow: 0px 8px 6px green;
     list-style: none;
     font-size: 24px;
     font-weight: bold;
