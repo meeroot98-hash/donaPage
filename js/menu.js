@@ -2,7 +2,7 @@ const botonMenu = document.getElementById("botonMenu");
 const cajaMenu = document.createElement("div");
 
 cajaMenu.id = "cajaMenu";
-cajaMenu.style.backgroundColor = "rgb(14, 26, 12)";
+cajaMenu.style.backgroundColor = "#ffffff"
 
 ////efefcto en boto Menu/////////////////
 botonMenu.addEventListener("touchstart", () => {

@@ -82,14 +82,16 @@ body{
   justify-content: space-evenly;
   align-items: center;
   
-  background-color: #ff00f0; /* opcional para ver el bloque */
+  background-color: white; /* opcional para ver el bloque */
 }
 
 .conjunto{
     color: rgb(0, 0, 0);
-    background-color: yellow;
-    width: 200px;
-    height: 60px;
+    background-color: #2ECC71;
+    box-shadow: 0px 7px 6px green;
+    color: white;
+    width: 280px;
+    height: 80px;
     border-radius: 5px;
     font-size: 22px;
     font-weight: bold;
