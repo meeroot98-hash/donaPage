@@ -11,7 +11,7 @@
    
 }
 body{
-    background-color: rgb(0, 0, 0);
+    
     padding:0px;
     margin: 0px;
     height: 100dvh;
@@ -33,6 +33,7 @@ body{
         padding: 0px;
         margin: 0px;
         background: #1F618D;
+        box-shadow: 0px 3px 4px rgb(185, 185, 185);
 }
 
      #logo{
@@ -106,12 +107,12 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: aqua;  
+        background-color: rgb(255, 255, 255);  
         
         }
 
         #informacion{
-            background-color: #4b007e;
+            
             height: 95%;
             width: 100%;
             display: flex;
@@ -126,38 +127,42 @@ main{
 #texto1{
 
     font-size: 24px;
+    color: #1F618D;
 
-    background-color: white;
-
-
-
-
+}
+#textoDonar{
+    color: grey;
 }
 #carrusel{
 
-    width: 250px;
-    height: 320px;
-    background-color: blue;
-    border-radius: 10px;
+    width: 280px;
+    height: 250px;
+    background-color:#D9D9D9;
+    border-radius: 30px;
+    color: white;
 }
 #texto2{
 
-    background-color: yellow;
+    
     font-size: 18px;
+    color: grey;
 }
 
 #botonDonar{
     
     font-size: 28px;
     font-weight: bold;
-    padding: 18px 60px;
+    padding: 18px 100px;
     border-radius: 8px;
     transition: 0.4s ease;
+    background-color: #2ECC71;
+    color: white;
+    box-shadow: 0px 5px 4px green;
 }
 #botonDonar.activo{
 
-     background-color: aqua;
-     color: blue;
+     background-color: green;
+     color: white;
 }
 
 
